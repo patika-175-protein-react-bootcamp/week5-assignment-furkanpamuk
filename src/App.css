@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --left-side-box-bg-color: #444AFF;
+  --left-side-text-color: #444AFF;
+  --left-side-bg-color: #DADADA;
+  --container-main-bg-color: #ffffff;
+  --container-main-text-color: #1F1F1F;
+  --input-border-color: #8E8E8E;
+}
+
+html,
+body {
+  min-height: 100vh !important;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+#root {
+  min-height: 100vh !important;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh !important;
+  background-color: var(--container-main-bg-color);
+}
+
+.theme {
+  position: absolute;
+  width: 44px;
+  height: 48px;
+  z-index: 100;
+  right: 30px;
+  top: 30px;
+
+}
+
+.leftside {
+  position: relative;
+  background-color: var(--left-side-bg-color);
+  width: 889px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.context {
+  position: absolute;
+  left: 56px;
+  top: 61px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 74px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-top: 42px;
+  color: var(--left-side-text-color);
+}
+
+.text {
+  left: 56px;
+  margin-top: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: var(--left-side-text-color);
+
+}
+
+.box1 {
+  width: 320.32px;
+  height: 96px;
+  transform: skew(-25deg);
+  background-color: var(--left-side-box-bg-color);
+
+  margin-top: 89px;
+  margin-left: 450px;
+
+  color: var(--left-side-box-bg-color);
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14), 0px 1px 20px rgba(0, 0, 0, 0.12), 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box2 {
+  width: 480.32px;
+  height: 96px;
+
+  margin-top: 32px;
+  margin-left: 227px;
+
+  transform: skew(-25deg);
+
+  color: var(--left-side-box-bg-color);
+  background-color: var(--left-side-box-bg-color);
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14), 0px 1px 20px rgba(0, 0, 0, 0.12), 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box2 {
+  width: 480.32px;
+  height: 96px;
+
+  margin-top: 32px;
+  margin-left: 227px;
+
+  transform: skew(-25deg);
+
+  color: var(--left-side-box-bg-color);
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14), 0px 1px 20px rgba(0, 0, 0, 0.12), 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rightside {
+  font-size: 20px;
+  margin-left: 200px;
+  margin-top: 100px;
+  position: relative;
+
+}
+
+
+.rightsideHeader {
+  font-size: 47px;
+  font-weight: 700;
+  color: var(--container-main-text-color);
+}
+
+.theme-svg {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.line {
+  position: absolute;
+  top: 70px;
+  width: 133px;
+  height: 4px;
+  color: var(--left-side-box-bg-color);
+  background-color: var(--left-side-box-bg-color);
+
+}
+
+form {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.15px;
+  color: #3C3C3C;
+}
+
+form>div>div {
+  position: relative;
+}
+
+form>div>div>p {
+  color: var(--container-main-text-color);
+}
+
+.formMiddle p::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+input {
+  border: 2px solid var(--input-border-color);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 20px;
+  background-color: var(--container-main-bg-color);
+  color: var(--container-main-text-color);
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+input~.errorSpan {
+  color: rgb(255, 113, 113);
+  font-size: 15px;
+  position: absolute;
+  left: 22px;
+  bottom: -25px;
+}
+
+.formTop {
+  display: flex;
+  margin-top: 50px;
+}
+
+.firstname,
+.lastname {
+  width: 264px;
+
+}
+
+.lastnameBox {
+  margin-left: 32px;
+}
+
+.formMiddle>div {
+  margin-top: 30px;
+}
+
+.formMiddle input {
+  width: 560px;
+}
+
+
+.checkBox {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.checkBox>input {
+  width: 24px;
+  height: 24px;
+}
+
+.checkBox>span {
+  font-size: 14px;
+  color: #8E8E8E;
+  margin-left: 10px;
+}
+
+.invalid-checkbox~span {
+  color: rgb(255, 113, 113);
+}
+
+form>button {
+  font-weight: 700;
+  height: 56px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  background: var(--left-side-box-bg-color);
+  border-radius: 4px;
+  margin-top: 27px;
+}
